@@ -1,0 +1,13 @@
+header:
+  name: "Jon Smith"
+  email: "Jon Smith@example.com"
+  github: "octocat"
+  website: "jon.smith.example.com"
+
+resume:
+  projects:
+    - "---"
+    - "Rattlusume.md"
+  experience:
+    - "---"
+    - "foo.md"
