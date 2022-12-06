@@ -1,7 +1,6 @@
 from pathlib import Path
 
 import typer
-
 from src.builder import build_document
 
 app = typer.Typer()

@@ -2,7 +2,6 @@ from dataclasses import dataclass
 from pathlib import Path
 
 import yaml
-
 from src.exceptions import DefinitionError
 
 
