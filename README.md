@@ -6,6 +6,14 @@ developers to store their resumes in git, and present them in a common format.
 Different yaml definitions can be used to craft bespoke resumes from a collection
 of markdown snippets.
 
+# Install
+
+Install via `pip` (or `pipx`).
+
+```console
+pip install rattlesume
+```
+
 # Usage
 
 ## Snippets

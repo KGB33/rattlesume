@@ -1,7 +1,8 @@
 from pathlib import Path
 
 import typer
-from src.builder import build_document
+
+from rattlesume.builder import build_document
 
 app = typer.Typer()
 
