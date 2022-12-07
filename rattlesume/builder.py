@@ -66,7 +66,13 @@ def build_header(structure: dict) -> str:
 def build_body(structure: dict, base_path: Path):
     document = ""
     for category, snippets in structure.items():
-        document += f"\n\n# {category.strip().capitalize()}\n\n"
+        if not isinstance(snippets, list):
+            header = snippets["header"]
+            snippets = snippets["snippets"]
+        else:
+            header = category.strip().capitalize()
+
+        document += f"\n\n# {header}\n\n"
         for snippet in snippets:
             match snippet:
                 case "---":

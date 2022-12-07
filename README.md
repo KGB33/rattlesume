@@ -19,8 +19,7 @@ pip install rattlesume
 ## Snippets
 
 To start, create a `content` directory with a subdirectory
-to organize a class of snippets. **The name of the
-subdirectory will be the same as the header in the final resume.**
+to organize a class of snippets.
 
 ```
  example/content/
@@ -65,8 +64,12 @@ The format of this value is still in flux.
 The `resume` section has arbitrary sub-key corresponding to the
 names of the subdirectories the snippets are located in.
 
-Each of these sub-keys take a list of values, which are ether file names
-or special values.
+Each of these directories takes two values, `header` and `snippets`.
+`snippets` is a list of values, which are ether file names or special values.
+`header` changes the default header from the sub-key to the given value.
+
+If all other keys are omitted the `snippets` can be listed directly under the
+directory name.
 
 For example, the aforementioned 'FooBar.md' could be defined as follows:
 
@@ -78,6 +81,12 @@ resume:
   experience:
     - "---"
     - "FooBar.md"
+# OR
+  experience:
+    header: "Work Experience"
+    snippets:
+      - "---"
+      - "FooBar.md"
 ```
 
 There is currently only one special value,
