@@ -1,8 +1,7 @@
 header:
-  name: "Jon Smith"
-  email: "Jon Smith@example.com"
-  github: "octocat"
-  website: "jon.smith.example.com"
+  - "# Jon Smith"
+  - "## JonSmith@example.com"
+  - "## github.com/octocat, jsmith.example.com"
 
 resume:
   projects:

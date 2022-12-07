@@ -58,6 +58,7 @@ and `resume`.
 
 ### `header`
 
+A list of raw markdown. Each entry in the list is placed on its own line.
 The format of this value is still in flux.
 
 ### `resume`

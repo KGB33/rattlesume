@@ -57,10 +57,10 @@ def build_document(definition: Path) -> str:
     return document
 
 
-def build_header(structure: dict) -> str:
+def build_header(structure: list[str]) -> str:
     if not structure:
         return ""
-    return "{name}\n\n{email}\n\ngithub.com/{github}\n\n{website}".format(**structure)
+    return "\n".join(structure)
 
 
 def build_body(structure: dict, base_path: Path):
