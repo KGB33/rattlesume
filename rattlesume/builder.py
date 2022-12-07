@@ -67,8 +67,8 @@ def build_body(structure: dict, base_path: Path):
     document = ""
     for category, snippets in structure.items():
         if not isinstance(snippets, list):
-            header = snippets["name"]
-            snippets = snippets["contents"]
+            header = snippets["header"]
+            snippets = snippets["snippets"]
         else:
             header = category.strip().capitalize()
 

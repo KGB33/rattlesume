@@ -64,11 +64,11 @@ The format of this value is still in flux.
 The `resume` section has arbitrary sub-key corresponding to the
 names of the subdirectories the snippets are located in.
 
-Each of these directories takes two values, `name` and `contents`.
-`contents` is a list of values, which are ether file names or special values.
+Each of these directories takes two values, `header` and `snippets`.
+`snippets` is a list of values, which are ether file names or special values.
 `header` changes the default header from the sub-key to the given value.
 
-If all other keys are omitted the `contents` can be listed directly under the
+If all other keys are omitted the `snippets` can be listed directly under the
 directory name.
 
 For example, the aforementioned 'FooBar.md' could be defined as follows:
@@ -84,7 +84,7 @@ resume:
 # OR
   experience:
     header: "Work Experience"
-    contents:
+    snippets:
       - "---"
       - "FooBar.md"
 ```
